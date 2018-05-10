@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Socket.IO Chat Example</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/foundation.css">
+</head>
+<body>
+    <ul class="pages">
+        <li class="chat page">
+          <div class="chatArea">
+            <ul class="messages"></ul>
+          </div>
+          <div class="grid-x">
+              <!-- <div class="content-avatar" id="holder2" ></div> -->
+          </div>
+          <div class="grid-x">
+              <input class="inputMessage" placeholder="Escriba aquí..."/>
+          </div>
+        </li>
+        <div class="background"></div>
+        <div class="login page ">
+          <div class="form">
+              <div class="grid-x align-middle content-login">
+                  <div class="cell grid-x align-center-middle ">
+                      <img class="image-logo" src="assets/img/fondo.png" alt="">
+                  </div>
+                  <div class="cell grid-x align-center-middle">
+                      <div class="content-avatar" id="holder" ></div>
+                  </div>
+                  <div class="cell grid-x align-center-middle content-input">
+                         <input class="usernameInput" type="text" onkeyup="randomizarAvatar()" maxlength="14" />
+                         <!-- <input class="usernameInput" type="text" > -->
+                  </div>
+                 
+              </div>
+          </div>
+        </div>
+      </ul>
+  <script src="assets/js/jquery.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+  <script src="assets/js/background.js"></script>
+  <script src="assets/js/avatar.js"></script>
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>
